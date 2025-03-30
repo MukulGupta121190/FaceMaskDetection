@@ -1,5 +1,5 @@
 # Face Mask Detection System
-A real-time face mask detection system that can detect whether a person is wearing a face mask correctly, incorrectly, or not at all. This project uses deep learning and computer vision techniques to analyze video streams.
+A real-time face mask detection system that can detect whether a person is wearing a face mask or not. This project uses deep learning and computer vision techniques to analyze video streams.
 
 <img align="center" alt="Coding" width="800" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2J4c3NlenBoMGZtajdmbXNqa2Q3aHBycnBkZnlianRrOWZiczg4aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9W2FchPfWTviEGWiQg/giphy.gif">
 
