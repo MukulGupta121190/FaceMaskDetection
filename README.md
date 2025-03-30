@@ -91,9 +91,11 @@ This will train the model and save it as mask_detector.h5
 2. Running the Face Mask Detection Model:
 To detect face masks in a video file, run the below script. 
 
-<pre>python detect_mask_video.py --input path/to/your/video.mp4 </pre>
+<pre>python detect_mask_video.py </pre>
 
-You will need to modify the input path and name according to your video file in the below script
+Press 'q' to quit the detection window!
+
+*Note: You will need to modify the input path and name according to your video file in the below script*
 <pre>vs = cv2.VideoCapture('/Users/mukulgupta/Downloads/mask_video.mp4') </pre>
 
 ## Project Structure
