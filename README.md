@@ -142,9 +142,9 @@ Here are some sample results of the mask detection in action:
 ### Detection Without Mask
 <table>
   <tr>
-    <td align="center"><img src="./images_resized/no_mask_detection/pred1.png" width="300"></td>
-    <td align="center"><img src="./images_resized/no_mask_detection/pred2.png" width="300"></td>
-    <td align="center"><img src="./images_resized/no_mask_detection/pred3.png" width="300"></td>
+    <td align="center"><img src="./images_resized/no_mask_detection/pred1.png" width="300" height="300"></td>
+    <td align="center"><img src="./images_resized/no_mask_detection/pred2.png" width="300" height="300"></td>
+    <td align="center"><img src="./images_resized/no_mask_detection/pred3.png" width="300" height="300"></td>
   </tr>
   <tr>
     <td align="center">Result 1</td>
@@ -152,9 +152,9 @@ Here are some sample results of the mask detection in action:
     <td align="center">Result 3</td>
   </tr>
    <tr>
-    <td align="center"><img src="./images_resized/no_mask_detection/pred4.png" width="300"></td>
-    <td align="center"><img src="./images_resized/no_mask_detection/pred5.png" width="300"></td>
-    <td align="center"><img src="./images_resized/no_mask_detection/pred6.png" width="300"></td>
+    <td align="center"><img src="./images_resized/no_mask_detection/pred4.png" width="300" height="300"></td>
+    <td align="center"><img src="./images_resized/no_mask_detection/pred5.png" width="300" height="300"></td>
+    <td align="center"><img src="./images_resized/no_mask_detection/pred6.png" width="300" height="300"></td>
   </tr>
   <tr>
     <td align="center">Result 4</td>
