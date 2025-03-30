@@ -113,25 +113,67 @@ FaceMaskDetection/
 ├── images                      # Model Prediction results
 │   ├── mask_detection/
 │   └── no_mask_detection/
+├── images_resized              # Resized Prediction results (just for better aesthetic in this .Readme file)
+│   ├── mask_detection/
+│   └── no_mask_detection/
 ├── requirements.txt            # Python dependencies
 └── README.md                   # This file
 </pre>
 
 ## Results
+Here are some sample results of the mask detection in action:
 
 ### Detection With Mask
-<p align="left">
-  <img src="./images/mask_detection/pred1.png" alt="Left Image" width="300" />
-</p>
-<p align="left">
-  <img src="./images/no_mask_detection/pred2.png" alt="Left Image" width="300" />
-</p>
-<p align="left">
-  <img src="./images/with_mask/pred3.png" alt="Left Image" width="300" />
-</p>
+<table>
+  <tr>
+    <td align="center"><img src="./images_resized/mask_detection/pred2.png" width="400"></td>
+    <td align="center"><img src="./images_resized/mask_detection/pred3.png" width="400"></td>
+    <td align="center"><img src="./images_resized/mask_detection/pred4.png" width="400"></td>
+    <td align="center"><img src="./images_resized/mask_detection/pred5.png" width="400"></td>
+  </tr>
+  <tr>
+    <td align="center">Result 1</td>
+    <td align="center">Result 2</td>
+    <td align="center">Result 3</td>
+    <td align="center">Result 4</td>
+  </tr>
+</table>
 
 ### Detection Without Mask
+<table>
+  <tr>
+    <td align="center"><img src="./images_resized/no_mask_detection/pred1.png" width="300"></td>
+    <td align="center"><img src="./images_resized/no_mask_detection/pred2.png" width="300"></td>
+    <td align="center"><img src="./images_resized/no_mask_detection/pred3.png" width="300"></td>
+  </tr>
+  <tr>
+    <td align="center">Result 1</td>
+    <td align="center">Result 2</td>
+    <td align="center">Result 3</td>
+  </tr>
+   <tr>
+    <td align="center"><img src="./images_resized/no_mask_detection/pred4.png" width="300"></td>
+    <td align="center"><img src="./images_resized/no_mask_detection/pred5.png" width="300"></td>
+    <td align="center"><img src="./images_resized/no_mask_detection/pred6.png" width="300"></td>
+  </tr>
+  <tr>
+    <td align="center">Result 4</td>
+    <td align="center">Result 5</td>
+    <td align="center">Result 6</td>
+  </tr>
+</table>
+
 
 ## Contributing
 Contributions to this project are welcome! If you have any ideas for improvements, bug fixes, or new features, feel free to submit a pull request.
 
+## Contact
+- 📫 How to reach me: **mukulgupta121190@gmail.com** | **https://www.linkedin.com/in/mukulgupta0991/**
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://www.linkedin.com/in/mukulgupta0991" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="shahrukhahmad26" height="30" width="40" /></a>
+<a href="https://www.hackerrank.com/mukulgupta121190" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="mukulgupta121190" height="30" width="40" /></a>
+<a href="https://medium.com/@mukulgupta121190" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@mukulgupta121190" height="30" width="40" /></a>
+<a href="https://kaggle.com/mukulgupta121190" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="mukulgupta121190" height="30" width="40" /></a>
+</p>
