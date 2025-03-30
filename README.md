@@ -2,8 +2,8 @@
 A real-time face mask detection system that can detect whether a person is wearing a face mask or not. This project uses deep learning and computer vision techniques to analyze video streams.
 <table>
   <tr>
-    <td align="center"><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2J4c3NlenBoMGZtajdmbXNqa2Q3aHBycnBkZnlianRrOWZiczg4aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9W2FchPfWTviEGWiQg/giphy.gif" width="300"></td>
-   <td align="center"><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm5peWhxZmt2NzI2M2Fxdjlvamlua3RsOG93dTNhajc0dTRjd2U0ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jMy7BAVpjjjykCSjDd/giphy.gif" width="300"></td>
+    <td align="center"><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2J4c3NlenBoMGZtajdmbXNqa2Q3aHBycnBkZnlianRrOWZiczg4aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9W2FchPfWTviEGWiQg/giphy.gif" width="330"></td>
+   <td align="center"><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdm5peWhxZmt2NzI2M2Fxdjlvamlua3RsOG93dTNhajc0dTRjd2U0ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jMy7BAVpjjjykCSjDd/giphy.gif" width="350"></td>
   </tr>
 </table>
 
