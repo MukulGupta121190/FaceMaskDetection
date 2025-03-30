@@ -121,12 +121,12 @@ FaceMaskDetection/
 
 ### Detection With Mask
 <p align="left">
-  <img src="./images/with_mask/pred1.png" alt="Left Image" width="300" />
+  <img src="./images/mask_detection/pred1.png" alt="Left Image" width="300" />
 </p>
-<p align="center">
-  <img src="./images/with_mask/pred2.png" alt="Left Image" width="300" />
+<p align="left">
+  <img src="./images/no_mask_detection/pred2.png" alt="Left Image" width="300" />
 </p>
-<p align="right">
+<p align="left">
   <img src="./images/with_mask/pred3.png" alt="Left Image" width="300" />
 </p>
 
