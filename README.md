@@ -110,7 +110,9 @@ FaceMaskDetection/
 ├── dataset/                    # Sample training data
 │   ├── with_mask/
 │   └── without_mask/
-├── results_images              # Model Output results
+├── images                      # Model Prediction results
+│   ├── mask_detection/
+│   └── no_mask_detection/
 ├── requirements.txt            # Python dependencies
 └── README.md                   # This file
 </pre>
