@@ -119,6 +119,19 @@ FaceMaskDetection/
 
 ## Results
 
+### Detection With Mask
+<p align="left">
+  <img src="./images/with_mask/pred1.png" alt="Left Image" width="300" />
+</p>
+<p align="center">
+  <img src="./images/with_mask/pred2.png" alt="Left Image" width="300" />
+</p>
+<p align="right">
+  <img src="./images/with_mask/pred3.png" alt="Left Image" width="300" />
+</p>
+
+### Detection Without Mask
+
 ## Contributing
 Contributions to this project are welcome! If you have any ideas for improvements, bug fixes, or new features, feel free to submit a pull request.
 
