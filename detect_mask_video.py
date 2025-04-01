@@ -100,60 +100,74 @@ faceNet = cv2.dnn.readNet(prototxtPath, weightsPath)
 print("[INFO] loading face mask detector model...")
 maskNet = load_model(args["model"])
 
+# Get user input for video source
+print("\nSelect video source:")
+print("1. Webcam")
+print("2. Video file")
+choice = input("Enter choice (1 or 2): ")
+
 # initialize the video stream and allow the camera sensor to warm up
-print("[INFO] starting video stream...")
-#vs = VideoStream(src=0).start()
-#vs = cv2.VideoCapture('D:/Projects/Face Detection/Indias migrant workers desperate to return home after lockdown.mp4')
-vs = cv2.VideoCapture('/Users/mukulgupta/Downloads/mask_video2.mp4')
-if not vs.isOpened():
-    print("[ERROR] Could not open video file.")
+if choice == "1":
+    # Webcam stream
+    print("[INFO] starting webcam stream...")
+    vs = VideoStream(src=0).start()
+    time.sleep(2.0)  # Warmup
+elif choice == "2":
+    # Video file
+	video_path = input("Enter path to video file: ")
+	vs = cv2.VideoCapture(video_path)
+	#vs = cv2.VideoCapture('/Users/mukulgupta/Downloads/mask_video5.gif')
+else:
+    print("[ERROR] Invalid choice. Exiting.")
     exit()
-time.sleep(2.0)
+# check to see if we are using a video file and if so, we need
 
-# loop over the frames from the video stream
+# loop over frames
+# loop over frames
 while True:
-	# grab the frame from the threaded video stream and resize it
-	# to have a maximum width of 400 pixels
-	#frame = vs.read()
-	ret,frame = vs.read()
-	if not ret or frame is None:
-		print("[INFO] End of video or cannot read the frame.")
-		break
-	#frame = imutils.resize(frame, width=400)
+    # Read frame based on source type
+    if choice == "1":
+        frame = vs.read()  # For VideoStream
+    else:
+        ret, frame = vs.read()  # For VideoCapture
+        if not ret:
+            print("[INFO] End of video file or cannot read the frame.")
+            break
 
-	# detect faces in the frame and determine if they are wearing a
-	# face mask or not
-	(locs, preds) = detect_and_predict_mask(frame, faceNet, maskNet)
+    if frame is None:
+        print("[INFO] No frame received.")
+        break
+    
+    # Optional resize
+    # frame = imutils.resize(frame, width=800)
 
-	# loop over the detected face locations and their corresponding
-	# locations
-	for (box, pred) in zip(locs, preds):
-		# unpack the bounding box and predictions
-		(startX, startY, endX, endY) = box
-		(mask, withoutMask) = pred
+    # detect faces in the frame and determine if they are wearing a mask
+    (locs, preds) = detect_and_predict_mask(frame, faceNet, maskNet)
 
-		# determine the class label and color we'll use to draw
-		# the bounding box and text
-		label = "Mask" if mask > withoutMask else "No Mask"
-		color = (0, 255, 0) if label == "Mask" else (0, 0, 255)
+    # loop over the detected face locations
+    for (box, pred) in zip(locs, preds):
+        (startX, startY, endX, endY) = box
+        (mask, withoutMask) = pred
 
-		# include the probability in the label
-		label = "{}: {:.2f}%".format(label, max(mask, withoutMask) * 100)
+        label = "Mask" if mask > withoutMask else "No Mask"
+        color = (0, 255, 0) if label == "Mask" else (0, 0, 255)
+        label = "{}: {:.2f}%".format(label, max(mask, withoutMask) * 100)
 
-		# display the label and bounding box rectangle on the output
-		# frame
-		cv2.putText(frame, label, (startX, startY - 10),
-			cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 2)
-		cv2.rectangle(frame, (startX, startY), (endX, endY), color, 2)
+        # display label and bounding box
+        cv2.putText(frame, label, (startX, startY - 10),
+            cv2.FONT_HERSHEY_SIMPLEX, 0.45, color, 2)
+        cv2.rectangle(frame, (startX, startY), (endX, endY), color, 2)
 
-	# show the output frame
-	cv2.imshow("Frame", frame)
-	key = cv2.waitKey(1) & 0xFF
-
-	# if the `q` key was pressed, break from the loop
-	if key == ord("q"):
-		break
+    # show output
+    cv2.imshow("Frame", frame)
+    key = cv2.waitKey(1) & 0xFF
+    
+    if key == ord("q"):
+        break
 
 # do a bit of cleanup
 cv2.destroyAllWindows()
-vs.stop()
+if choice == "1":
+    vs.stop()  # For VideoStream
+else:
+    vs.release()  # For VideoCapture
