@@ -168,7 +168,7 @@ Here are some sample results of the mask detection in action:
 </table>
 
 
-## Contributing
+## Contributions
 Contributions to this project are welcome! If you have any ideas for improvements, bug fixes, or new features, feel free to submit a pull request.
 
 ## Contact
